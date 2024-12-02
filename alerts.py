@@ -19,7 +19,7 @@ def pd_alert(routing_key, summary, source, severity):
     }
     payload = {
         "routing_key": routing_key,
-        "event_action": "trigger",
+        "event_action": "trigger", # 'trigger' is used to create a new alert
         "payload": {
             "summary": summary,
             "source": source, 
